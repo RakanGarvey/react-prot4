@@ -8,6 +8,7 @@ body {
     overflow-x: hidden;
 }
 .container {
+    overflow-x: hidden;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -164,12 +165,13 @@ h1 {
     .porto {
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
     .porto-cont {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center; 
     }
 
 
@@ -346,6 +348,9 @@ h1 {
         justify-content: center;
         margin-bottom: 20pc;
     }
+    .porto-title {
+        margin-left: 4pc;
+    }
 }
 
 
@@ -388,6 +393,7 @@ h4 {
     gap: 5pc;
 }
 .port-desc {
+    max-width: 25pc;
     font-size: 17px;
     margin-top: -20px;
     margin-bottom: 5pc;
@@ -438,7 +444,8 @@ h4 {
 }
 .exp-title {
     text-align: center;
-    margin-left: 6.5pc;
+    /* margin-left: 6.5pc; */
+    /* margin-right: 0; */
 }
 .social {
     width: 1000px;

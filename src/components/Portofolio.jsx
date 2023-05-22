@@ -5,10 +5,10 @@ const Portofolio = () => {
     <div className='porto-cont'>
         <div className="porto">
         <div className='side1'>
-        <div>
+        <div className='align'>
             <h1 className="porto-title">Portofolio</h1>
-            <p className='port-desc'>These are my design portofolio. You can check it by yourself. <br />
-            Some of my work have been live. As you can see, I work with <br />different styles</p>
+            <p className='port-desc'>These are my design portofolio. You can check it by yourself. 
+            Some of my work have been live. As you can see, I work with different styles</p>
         </div>
         <div className="work pro"></div>
         <div className="work0 pro"></div>
