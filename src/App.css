@@ -1,0 +1,558 @@
+@font-face {
+    font-family: 'cookie';
+    src: url('./Cookie/Cookie-Regular.ttf') format('truetype');
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3pc;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 10pc;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+}
+.logo, .logo1 {
+    height: 4pc;
+}
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-size: 20px;
+}
+.li {
+    cursor: pointer;
+}
+/* .menu {
+    display: none;
+    font-size: 50px;
+    cursor: pointer;
+} */
+/* ::: */
+.about {
+    display: flex;
+    gap: 5pc;
+    justify-content: center;
+    align-items: center;
+}
+.pers-img {
+    background-image: url('./assets/model.jpg');
+    background-position: center;
+    background-size: cover;
+    border-bottom-left-radius: 16pc;
+    border-bottom-right-radius: 16pc;
+    width: 21pc;
+    height: 30pc;
+}
+h5 {
+    font-size: 20px;
+    margin-bottom: -1.3pc;
+    color: rgb(131, 190, 241);
+}
+h1 {
+    width: fit-content;
+    font-size: 60px;
+    letter-spacing: 1px;
+}
+.job-desc {
+    max-width: 23.3pc;
+}
+
+.story-cont {
+    visibility: hidden;
+    margin: 0 -21pc;
+    z-index: 100;
+    border-radius: 20px;
+    height: 17pc;
+    width: 37pc;
+    background-color: rgb(230, 224, 216);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 1s;
+}
+.show {
+    visibility: visible;
+}
+.story {
+    width: 25pc;
+    font-size: 19px;
+    text-align: center;
+}
+.close {
+    font-size: 30px;
+    margin-bottom: -2.2pc;
+    position: relative;
+    left: 17.8pc;
+    bottom: 5pc;
+    cursor: pointer;
+}
+
+
+.story-btn {
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 2px solid rgb(60, 153, 235);
+    background-color: rgb(60, 153, 235);
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+.story-btn:hover {
+    background-color: white;
+    color: rgb(60, 153, 235);
+}
+@media only screen and (max-width: 958px){
+    .benefits {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 20pc;
+    }
+    .social {
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 728px) and (max-width: 833px) {
+    .about {
+        gap: 3pC;
+    }
+    .job-desc {
+        width: 10pc;
+    }
+    .pers-img {
+        width: 18pc;
+    }
+
+    .experince-cont {
+        max-width: 100%;
+    }
+    .exp {
+        display: flex;
+        
+        gap: 2pc;
+    }
+    .exp-details {
+        margin-right: 3pc;
+    }
+
+    .exp {
+        gap: 2pc;
+    }
+    h4 {
+        font-size: 15px;
+        font-weight: 100;
+    }
+
+
+    .porto {
+        display: flex;
+        flex-direction: column;
+    }
+    .porto-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .benefits {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 20pc;
+    }
+    .exp-title {
+        margin-left: 0;
+    }
+}
+
+
+@media only screen and (max-width: 727px){
+    .about {
+        flex-direction: column;
+    }
+
+    .porto {
+        display: flex;
+        flex-direction: column;
+    }
+    .porto-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .benefits {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 20pc;
+    }
+}
+
+
+@media only screen and (max-width: 724px) {
+    .header {
+       width: 10%;
+       align-items: center;
+    }
+    .li {
+        visibility: hidden;
+    }
+    .pers-img {
+        width: 17pc;
+        height: 25pc;
+    }
+    .pers-info {
+        text-align: center;
+    }
+    .story-cont {
+        height: 17pc;
+        width: 30pc;
+    }
+    .close {
+        font-size: 30px;
+        margin-bottom: -2.2pc;
+        position: relative;
+        left: 14.5pc;
+        bottom: 5pc;
+        cursor: pointer;
+    }
+
+    .porto {
+        display: flex;
+        flex-direction: column;
+    }
+    .porto-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .port-desc {
+        width: 25pc;
+        text-align: center;
+    }
+
+
+    .benefits {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 20pc;
+    }
+
+
+    .review {
+        margin-top: 9pc;
+        display: flex;
+        justify-content: space-around;
+        width: 950px;
+        background-color: rgb(158, 198, 233);
+        border-radius: 2pc;
+    }
+    .review-desc {
+        width: 20pc;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    .cust-img {
+        height: 17pc;
+        position: relative;
+        bottom: 7pc;
+    }
+}
+@media only screen and (max-width: 504px) {
+    .review {
+        text-align: center;
+    }
+    .cust-img {
+        display: none;
+    }
+    .client-name, .review-desc {
+        margin-right: 8pc;
+    }
+
+    
+    .story-cont {
+        height: 17pc;
+        width: 25pc;
+    }
+    .story {
+        width: 20pc;
+        font-size: 19px;
+        text-align: center;
+    }
+    .close {
+        font-size: 30px;
+        margin-bottom: -2.2pc;
+        position: relative;
+        left: 12pc;
+        bottom: 5pc;
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width: 458px) {
+    .logo {
+        position: relative;
+        left: 3.5pc;
+    }
+
+    
+
+
+    .porto {
+        display: flex;
+        flex-direction: column;
+    }
+    .porto-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .work, .work0, .work1, .work2, .work3 {
+        width: 20pc;
+    }
+
+    .benefits {
+        flex-direction: column;
+    }
+
+
+    .benefits {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 20pc;
+    }
+}
+
+
+/* ____________________________________________________ */
+.experince-cont {
+    max-width: 100%;
+}
+.exp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.exp-details {
+    display: flex;
+    text-align: center;
+    margin-right: 5pc;
+}
+h2 {
+    font-family: 'cookie', sans-serif;
+    font-size: 60px;
+    margin-right: 1pc;
+    margin-top: 21px;
+    color: pink;
+}
+h4 {
+    font-size: 20px;
+    font-weight: 100;
+}
+/* ________________________________________________ */
+.porto-cont {
+    max-width: 100%;
+}
+.porto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5pc;
+}
+.port-desc {
+    font-size: 17px;
+    margin-top: -20px;
+    margin-bottom: 5pc;
+}
+.pro {
+    margin-bottom: 3pc;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.work {
+    height: 40pc;
+    width: 25pc;
+    max-width: 100%;
+    background-image: url('./assets/web2.jpg');
+    background-size: cover;
+    border-radius: 20px;
+}
+.work1 {
+    height: 20pc;
+    width: 25pc;
+    max-width: 100%;
+    background-image: url('./assets/web1.jpg');
+    background-size: cover;
+    border-radius: 20px;
+}
+.work2 {
+    height: 20pc;
+    width: 25pc;
+    max-width: 100%;
+    background-image: url('./assets/web3.jpg');
+    background-size: cover;
+    border-radius: 20px;
+}
+.work3 {
+    height: 40pc;
+    width: 25pc;
+    max-width: 100%;
+    background-image: url('./assets/web4.jpg');
+    background-size: cover;
+    border-radius: 20px;
+}
+.work0 {
+    height: 20pc;
+    width: 25pc;
+    max-width: 100%;
+    background-image: url('./assets/web5.jpg');
+    background-size: cover;
+    border-radius: 20px;
+}
+.exp-title {
+    text-align: center;
+    margin-left: 6.5pc;
+}
+.social {
+    width: 1000px;
+    max-width: 100%;
+    height: 30pc;
+    background-image: url('./assets/social.jpg');
+    background-position: center;
+}
+/* ______________________________________________________ */
+.benefits-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.benefits {
+    display: flex;
+    gap: 5pc;
+    width: 1000px;
+    max-width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 20pc;
+}
+.bene-title {
+    color: rgb(3, 3, 41);
+    font-size: 35px;
+}
+
+.review {
+    margin-top: 9pc;
+    display: flex;
+    justify-content: space-around;
+    height: 13pc;
+    width: 950px;
+    max-width: 100%;
+    max-height: fit-content;
+    background-color: rgb(158, 198, 233);
+    border-radius: 2pc;
+}
+.client-name, .review-desc {
+    position: relative;
+    left: 4pc;
+    top: 2pc;
+}
+.review-desc {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: -1pc;
+}
+.client-name {
+    font-size: 21px;
+    color: rgb(3, 3, 41);
+}
+.cust-img {
+    height: 20pc;
+    position: relative;
+    bottom: 7pc;
+}
+/* _____________________________________ */
+.contact-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.email {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 30px;
+    border: 2px solid rgb(60, 153, 235);
+    background-color: rgb(60, 153, 235);
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+.email:hover {
+    background-color: rgb(160, 209, 253);
+    color: white;
+}
+.email:active {
+    background-color: rgb(2, 51, 94);
+}
+/* _________________________________________________ */
+footer {
+    width: 80%;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+.last {
+    margin-top: 2pc;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.social-media {
+    font-size: 25px;
+    display: flex;
+    gap: 20px;
+}
+.icon {
+    cursor: pointer;
+}
+
+
+.darken {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9;
+}
